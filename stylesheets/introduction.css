@@ -1,0 +1,10 @@
+body {
+  background-color: #1f1f1f;
+  color: #fffafa;
+}
+
+#image {
+  margin-left: 2%;
+  float: right;
+  width: 50%;
+}
