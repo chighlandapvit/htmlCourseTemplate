@@ -1,0 +1,17 @@
+body {
+  background-color: #1f1f1f;
+  color: #fffafa;
+}
+
+.littleImage {
+  margin: 1em;
+  width: 8em;
+}
+
+.imageCon {
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32em;
+  text-align: center;
+}

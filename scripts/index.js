@@ -1,6 +1,10 @@
 let menuBtn = document.getElementById('menuBtn'),
   menuBox = document.getElementById('menuBox'),
-  menuList = document.getElementById('menuList');
+  menuList = document.getElementById('menuList'),
+  nextBtn = document.getElementById('nextBtn'),
+  mainFrame = document.getElementById('mainFrame');
+
+let hrefArr = ['pages/introduction.html', 'pages/l1p1.html'];
 
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -12,6 +16,20 @@ menuBtn.addEventListener('click', function(e) {
     addClass(menuList, 'invisible');
     menuList.setAttribute('aria-hidden', 'true');
   }
+});
+
+nextBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  let newHref;
+  for (i = 0; i < hrefArr.length; i++) {
+    if (hrefArr[i] != i) {
+      newHref = hrefArr[i];
+    } else {
+      i + 1;
+    } 
+  }
+
+  mainFrame.setAttribute('src', newHref);
 });
 
 // adds class to element
