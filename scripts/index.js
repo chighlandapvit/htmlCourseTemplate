@@ -7,14 +7,14 @@ let menuBtn = document.getElementById('menuBtn'),
   mainFrame = document.getElementById('mainFrame'),
   pageAmount;
 
-let currentPage = 0;
-
 let pageArr = [
   'pages/introduction.html',
   'pages/introduction2.html',
   'pages/l1p1.html',
   'pages/l1p2.html'
 ];
+
+let currentPage = 0;
 
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -45,7 +45,7 @@ nextBtn.addEventListener('click', function(e) {
     mainFrame.setAttribute('src', pageArr[currentPage]);
   }
 
-  if (pageArr[currentPage].pageNum > 0) {
+  if (pageArr > 0) {
     pageNum.innerHTML = 'PAGE ' + currentPage + 'of ' + pageAmount;
   }
 });
