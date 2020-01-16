@@ -14,7 +14,8 @@ let pageArr = [
   'pages/l1p2.html'
 ];
 
-let currentPage = 0;
+let currentPage = 0,
+  newCurrentPage = 'PAGE ' + currentPage + 'OF ' + pageAmount;
 
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -46,36 +47,9 @@ nextBtn.addEventListener('click', function(e) {
   }
 
   if (pageArr > 0) {
-    pageNum.innerHTML = 'PAGE ' + currentPage + 'of ' + pageAmount;
+    pageNum.innerHTML = `PAGE ${currentPage} OF ${pageAmount}`;
   }
 });
-
-//   prevPage.addEventListener('click', function() {
-//     if (currentPage > 1) {
-//       currentPage -= 1;
-//       frame.src = arr[currentPage].location;
-//     }
-
-//     if (arr[currentPage].pageNum > 0) {
-//       page.innerHTML = `PAGE ${arr[currentPage].pageNum} of ${pageAmount}`;
-//     } else {
-//       page.innerHTML = '';
-//     }
-//   });
-
-//   nextPage.addEventListener('click', function() {
-//     if (currentPage >= 0 && currentPage < arr.length - 1) {
-//       currentPage += 1;
-//       frame.src = arr[currentPage].location;
-//     }
-
-//     if (arr[currentPage].pageNum > 0) {
-//       page.innerHTML = `PAGE ${arr[currentPage].pageNum} OF ${pageAmount}`;
-//     } else {
-//       page.innerHTML = '';
-//     }
-//   });
-// }
 
 // adds class to element
 function addClass(element, className) {
