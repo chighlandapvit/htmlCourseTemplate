@@ -12,9 +12,61 @@ body {
   display: none;
 }
 
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
 #menuList {
   height: 20em;
   width: 15em;
   overflow: scroll;
   background-color: #000f00;
+}
+
+.bigImage {
+  margin: 0 2%;
+  width: 50%;
+}
+
+#personImage {
+  float: right;
+  margin: 2%;
+  width: 30%;
+}
+
+.littleImage {
+  margin: 2%;
+  /* width: 8em; */
+  width: 28%;
+}
+
+.imageCon {
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32em;
+  text-align: center;
+}
+
+#menuBtn:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #113b08;
+  color: #fffafa;
+  border-color: #113b08;
+}
+
+.btn:active {
+  filter: brightness(80%);
+  background-color: #1f1f1f;
+  color: #fffafa;
+  border: solid 0.1em #fffafa;
 }

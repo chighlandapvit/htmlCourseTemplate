@@ -1,10 +1,20 @@
 let menuBtn = document.getElementById('menuBtn'),
   menuBox = document.getElementById('menuBox'),
   menuList = document.getElementById('menuList'),
+  prevBtn = document.getElementById('prevBtn'),
   nextBtn = document.getElementById('nextBtn'),
-  mainFrame = document.getElementById('mainFrame');
+  pageNum = document.getElementById('pageNum'),
+  mainFrame = document.getElementById('mainFrame'),
+  pageAmount;
 
-let hrefArr = ['pages/introduction.html', 'pages/l1p1.html'];
+let currentPage = 0;
+
+let pageArr = [
+  'pages/introduction.html',
+  'pages/introduction2.html',
+  'pages/l1p1.html',
+  'pages/l1p2.html'
+];
 
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -18,19 +28,54 @@ menuBtn.addEventListener('click', function(e) {
   }
 });
 
+prevBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  if (currentPage > 0) {
+    currentPage -= 1;
+    mainFrame.setAttribute('src', pageArr[currentPage]);
+  }
+});
+
 nextBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  let newHref;
-  for (i = 0; i < hrefArr.length; i++) {
-    if (hrefArr[i] != i) {
-      newHref = hrefArr[i];
-    } else {
-      i + 1;
-    } 
+
+  if (currentPage >= 0 && currentPage < pageArr.length - 1) {
+    currentPage += 1;
+    mainFrame.setAttribute('src', pageArr[currentPage]);
   }
 
-  mainFrame.setAttribute('src', newHref);
+  if (pageArr[currentPage].pageNum > 0) {
+    pageNum.innerHTML = 'PAGE ' + currentPage + 'of ' + pageAmount;
+  }
 });
+
+//   prevPage.addEventListener('click', function() {
+//     if (currentPage > 1) {
+//       currentPage -= 1;
+//       frame.src = arr[currentPage].location;
+//     }
+
+//     if (arr[currentPage].pageNum > 0) {
+//       page.innerHTML = `PAGE ${arr[currentPage].pageNum} of ${pageAmount}`;
+//     } else {
+//       page.innerHTML = '';
+//     }
+//   });
+
+//   nextPage.addEventListener('click', function() {
+//     if (currentPage >= 0 && currentPage < arr.length - 1) {
+//       currentPage += 1;
+//       frame.src = arr[currentPage].location;
+//     }
+
+//     if (arr[currentPage].pageNum > 0) {
+//       page.innerHTML = `PAGE ${arr[currentPage].pageNum} OF ${pageAmount}`;
+//     } else {
+//       page.innerHTML = '';
+//     }
+//   });
+// }
 
 // adds class to element
 function addClass(element, className) {
