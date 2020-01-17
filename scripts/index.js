@@ -4,18 +4,18 @@ let menuBtn = document.getElementById('menuBtn'),
   prevBtn = document.getElementById('prevBtn'),
   nextBtn = document.getElementById('nextBtn'),
   pageNum = document.getElementById('pageNum'),
-  mainFrame = document.getElementById('mainFrame'),
-  pageAmount;
+  mainFrame = document.getElementById('mainFrame');
 
 let pageArr = [
-  'pages/introduction.html',
-  'pages/introduction2.html',
-  'pages/l1p1.html',
-  'pages/l1p2.html'
-];
+    'pages/introduction.html',
+    'pages/introduction2.html',
+    'pages/l1p1.html',
+    'pages/l1p2.html'
+  ],
+  pageAmount = pageArr.length,
+  currentPage = 0;
 
-let currentPage = 0,
-  newCurrentPage = 'PAGE ' + currentPage + 'OF ' + pageAmount;
+pageNum.innerHTML = `PAGE 1 OF ${pageAmount}`;
 
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
@@ -36,19 +36,18 @@ prevBtn.addEventListener('click', function(e) {
     currentPage -= 1;
     mainFrame.setAttribute('src', pageArr[currentPage]);
   }
+  pageNum.innerHTML = `PAGE ${currentPage + 1} OF ${pageAmount}`;
 });
 
 nextBtn.addEventListener('click', function(e) {
   e.preventDefault();
 
-  if (currentPage >= 0 && currentPage < pageArr.length - 1) {
+  if (currentPage >= 0 && currentPage < pageAmount - 1) {
     currentPage += 1;
     mainFrame.setAttribute('src', pageArr[currentPage]);
   }
 
-  if (pageArr > 0) {
-    pageNum.innerHTML = `PAGE ${currentPage} OF ${pageAmount}`;
-  }
+  pageNum.innerHTML = `PAGE ${currentPage + 1} OF ${pageAmount}`;
 });
 
 // adds class to element
