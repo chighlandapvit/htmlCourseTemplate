@@ -9,8 +9,9 @@ let menuBtn = document.getElementById('menuBtn'),
 let pageArr = [
     'pages/introduction.html',
     'pages/introduction2.html',
-    'pages/l1p1.html',
-    'pages/l1p2.html'
+    'pages/lesson1/l1p1.html',
+    'pages/lesson1/l1p2.html',
+    'pages/lesson1/l1p3.html'
   ],
   pageAmount = pageArr.length,
   currentPage = 0;
