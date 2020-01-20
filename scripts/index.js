@@ -11,7 +11,8 @@ let pageArr = [
     'pages/introduction2.html',
     'pages/lesson1/l1p1.html',
     'pages/lesson1/l1p2.html',
-    'pages/lesson1/l1p3.html'
+    'pages/lesson1/l1p3.html',
+    'pages/lesson1/l1p4.html'
   ],
   pageAmount = pageArr.length,
   currentPage = 0;
