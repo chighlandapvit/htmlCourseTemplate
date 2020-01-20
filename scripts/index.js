@@ -7,18 +7,23 @@ let menuBtn = document.getElementById('menuBtn'),
   mainFrame = document.getElementById('mainFrame');
 
 let pageArr = [
-    'pages/introduction.html',
-    'pages/introduction2.html',
-    'pages/lesson1/l1p1.html',
-    'pages/lesson1/l1p2.html',
-    'pages/lesson1/l1p3.html',
-    'pages/lesson1/l1p4.html'
+    'pages/intro1.html',
+    'pages/intro2.html',
+    'pages/lesson1/page1.html',
+    'pages/lesson1/page2.html',
+    'pages/lesson1/page3.html',
+    'pages/lesson1/page4.html',
+    'pages/lesson1/page5.html'
   ],
   pageAmount = pageArr.length,
   currentPage = 0;
 
+// set iFrame src to the href of the first page in pageArr
+mainFrame.setAttribute('src', pageArr[currentPage]);
+
 pageNum.innerHTML = `PAGE 1 OF ${pageAmount}`;
 
+// opens menu(TableOfContents) when clicked
 menuBtn.addEventListener('click', function(e) {
   e.preventDefault();
 
@@ -30,7 +35,7 @@ menuBtn.addEventListener('click', function(e) {
     menuList.setAttribute('aria-hidden', 'true');
   }
 });
-
+// navigates to previous page and displays new current page number
 prevBtn.addEventListener('click', function(e) {
   e.preventDefault();
 
@@ -40,7 +45,7 @@ prevBtn.addEventListener('click', function(e) {
   }
   pageNum.innerHTML = `PAGE ${currentPage + 1} OF ${pageAmount}`;
 });
-
+// navigates to next page and displays new current page number
 nextBtn.addEventListener('click', function(e) {
   e.preventDefault();
 

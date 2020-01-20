@@ -1,7 +1,7 @@
-let choiceForm = document.getElementById('choiceForm');
-let choiceBtns = document.getElementsByClassName('choiceBtn');
-let val;
+let choiceForm = document.getElementById('choiceForm'),
+  choiceBtns = document.getElementsByClassName('choiceBtn');
 
+// gets values from the selected options when user submits form
 choiceForm.addEventListener('submit', function(e) {
   e.preventDefault();
 
