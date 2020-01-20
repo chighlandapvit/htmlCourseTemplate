@@ -40,7 +40,6 @@ body {
 
 .littleImage {
   margin: 2%;
-  /* width: 8em; */
   width: 28%;
 }
 
@@ -61,6 +60,38 @@ body {
   margin-right: auto;
   width: 32em;
   text-align: center;
+}
+
+#optionBox {
+  float: left;
+}
+
+.option {
+  width: 20em;
+  margin: 1%;
+}
+
+.option:hover {
+  cursor: grab;
+}
+
+.option:active {
+  cursor: grabbing;
+}
+
+#dropBoxContainer {
+  float: right;
+  margin-right: 2%;
+}
+
+.dropBox {
+  width: 24em;
+  height: 6em;
+  margin: 1em;
+  border: solid 0.2em #000f00;
+  background: content-box no-repeat url('../images/stripes.png');
+  background-size: cover;
+  background-color: #696969;
 }
 
 #menuBtn:hover {

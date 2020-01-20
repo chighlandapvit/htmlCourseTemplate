@@ -2,8 +2,62 @@
 <html lang="en">
   <head>
     <title>Lesson 1 Page 5</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Drag and drop</h1>
+
+    <section id="dragAndDrop">
+      <section id="optionBox">
+        <img
+          id="option1"
+          class="option"
+          src="../../images/option1.png"
+          alt="option1"
+          draggable="true"
+          onDragStart="onDragStart(event);"
+        />
+        <br />
+        <img
+          id="option2"
+          class="option"
+          src="../../images/option2.png"
+          alt="option2"
+          draggable="true"
+          onDragStart="onDragStart(event);"
+        />
+        <br />
+        <img
+          id="option3"
+          class="option"
+          src="../../images/option3.png"
+          alt="option3"
+          draggable="true"
+          onDragStart="onDragStart(event);"
+        />
+      </section>
+
+      <section id="dropBoxContainer">
+        <section
+          id="dropBox1"
+          class="dropBox"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        ></section>
+        <section
+          id="dropBox2"
+          class="dropBox"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        ></section>
+        <section
+          id="dropBox3"
+          class="dropBox"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        ></section>
+      </section>
+    </section>
+    <script src="../../scripts/drag.js"></script>
   </body>
 </html>
