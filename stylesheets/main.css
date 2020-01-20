@@ -83,6 +83,12 @@ body {
   cursor: grabbing;
 }
 
+.optionOver:hover,
+.choiceBtn:hover {
+  cursor: pointer;
+  color: #0000ff;
+}
+
 #dropBoxContainer {
   float: right;
   margin-right: 2%;

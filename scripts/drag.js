@@ -26,7 +26,16 @@ function onDrop(event) {
 
 submitBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  console.log(`DropBox 1 = ${dropBox1.children[0].id}`);
-  console.log(`DropBox 2 = ${dropBox2.children[0].id}`);
-  console.log(`DropBox 3 = ${dropBox3.children[0].id}`);
+
+  if (
+    dropBox1.children.length == 0 ||
+    dropBox2.children.length == 0 ||
+    dropBox3.children.length == 0
+  ) {
+    console.log('You must match all the items with their definitions!');
+  } else {
+    console.log(`DropBox 1 = ${dropBox1.children[0].id}`);
+    console.log(`DropBox 2 = ${dropBox2.children[0].id}`);
+    console.log(`DropBox 3 = ${dropBox3.children[0].id}`);
+  }
 });

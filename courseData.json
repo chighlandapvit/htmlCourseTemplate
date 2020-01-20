@@ -1,0 +1,179 @@
+{
+  "intro": {
+    "page1": {
+      "pageType": "display2",
+      "elements": {
+        "heading": "Introduction",
+        "paragraph1": "Flight is the process by which an object moves through an atmosphere (or beyond it, as in the case of spaceflight) without contact with the surface. This can be achieved by generating aerodynamic lift associated with propulsive thrust, aerostatically using buoyancy, or by ballistic movement.",
+        "paragraph2": "Many things can fly, from natural aviators such as birds, bats, and insects, to human inventions like aircraft, including airplanes, helicopters, balloons, and rockets which may carry spacecraft.",
+        "paragraph3": "The engineering aspects of flight are the purview of aerospace engineering which is subdivided into aeronautics, the study of vehicles that travel through the air, and astronautics, the study of vehicles that travel through space, and ballistics, the study of the flight of projectiles.",
+        "subHeading": "Click the 'Next' button to begin the lesson.",
+        "bigImage": {
+          "href": "plane.jfif",
+          "altText": "An airplane in a forest."
+        }
+      }
+    },
+    "page2": {
+      "pageType": "display2",
+      "elements": {
+        "heading": "Introduction Continued...",
+        "paragraph1": "While the observation of objects in space, known as astronomy, predates reliable recorded history, it was the development of large and relatively efficient rockets during the mid-twentieth century that allowed physical space exploration to become a reality. Common rationales for exploring space include advancing scientific research, national prestige, uniting different nations, ensuring the future survival of humanity, and developing military and strategic advantages against other countries.",
+        "paragraph2": "Space exploration is the use of astronomy and space technology to explore outer space.[1] While the study of space is carried out mainly by astronomers with telescopes, its physical exploration though is conducted both by unmanned robotic space probes and human spaceflight.",
+        "bigImage": {
+          "href": "spaceman.jpg",
+          "altText": "An astronaut floating above the Earth."
+        },
+        "image1": {
+          "href": "rocketship.png",
+          "altText": "A rocketship blasting off."
+        },
+        "image2": {
+          "href": "moon.png",
+          "altText": "The Earth's moon, Luna."
+        }
+      }
+    }
+  },
+  "lesson1": {
+    "page1": {
+      "pageType": "display2",
+      "elements": {
+        "heading": "Lesson 1 Page 1",
+        "p1": "Chemistry is the scientific discipline involved with elements and compounds composed of atoms, molecules and ions: their composition, structure, properties, behavior and the changes they undergo during a reaction with other substances.",
+        "ul": {
+          "1": "The atom is the basic unit of chemistry",
+          "2": "An element is composed of a single atom",
+          "3": "A compound is composed of more than one element"
+        },
+        "paragraph2": "Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds. There are four types of chemical bonds: covalent bonds, in which compounds share one or more electron(s); ionic bonds, in which a compound donates one or more electrons to another compound to produce ions (cations and anions); hydrogen bonds; and Van der Waals force bonds.",
+        "smallImage1": {
+          "href": "little.png",
+          "altText": "A beaker filled with chemicals."
+        },
+        "smallImage2": {
+          "href": "little2.png",
+          "altText": "A beaker filled with chemicals."
+        },
+        "smallImage3": {
+          "href": "little3.png",
+          "altText": "A beaker filled with chemicals."
+        }
+      }
+    },
+    "page2": {
+      "pageType": "display3",
+      "elements": {
+        "heading": "Lesson 1 Page 2",
+        "subHeading": "A Detailed List",
+        "paragraph1": "Rabbits are small mammals in the family Leporidae of the order Lagomorpha (along with the hare and the pika). Oryctolagus cuniculus includes the European rabbit species and its descendants, the world's 305 breeds of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types of cottontail. The European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of livestock and pet. With its widespread effect on ecologies and cultures, the rabbit (or bunny) is, in many areas of the world, a part of daily life—as food, clothing, a companion, and as a source of artistic inspiration.",
+        "ol": {
+          "1": "Item 1 is a Rabbit",
+          "2": "Item 2 is the Rabbit's house",
+          "3": "Item 3 is the Rabbit's food stash",
+          "4": "Item 4 is the Snake",
+          "5": "Item 5 is the Rabbit inside of the Snake's belly"
+        },
+        "video": "test.mp4"
+      }
+    },
+    "page3": {
+      "pageType": "radio",
+      "elements": {
+        "heading": "The best type of household buddy is:",
+        "options": {
+          "1": "Cat",
+          "2": "Dog",
+          "3": "Pig",
+          "4": "Ferret"
+        },
+        "answer": "2"
+      }
+    },
+    "page4": {
+      "pageType": "checkBox",
+      "elements": {
+        "heading": "Which character(s) could defeat Monday?",
+        "options": {
+          "1": "Superman",
+          "2": "Mister Bean",
+          "3": "Garfield",
+          "4": "Captain Planet"
+        },
+        "answers": {
+          "1": "1",
+          "2": "2",
+          "3": "4"
+        }
+      }
+    },
+    "page5": {
+      "pageType": "dragAndDrop",
+      "elements": {
+        "heading": "Match the terms with their definition:",
+        "images": {
+          "image1": {
+            "href": "option1.png",
+            "altText": "The first selection option."
+          },
+          "image2": {
+            "href": "option2.png",
+            "altText": "The second selection option."
+          },
+          "image3": {
+            "href": "option3.png",
+            "altText": "The third selection option."
+          }
+        },
+        "definitions": {
+          "definition1": "A third selection option.",
+          "definition2": "Sometimes the best selection but always the second option.",
+          "definition3": "An option that is the first choice."
+        }
+      }
+    },
+    "page6": {
+      "pageType": "dropDown2",
+      "elements": {
+        "heading": "How is it that magic sail boats can fly?",
+        "dropSet1": {
+          "heading": "It is through the use of:",
+          "options": {
+            "1": "Burritos",
+            "2": "Magic",
+            "3": "Tinfoil sails",
+            "4": "The Government",
+            "5": "Science",
+            "6": "Alien technology"
+          },
+          "answer": "2"
+        }
+      },
+      "dropSet2": {
+        "elements": {
+          "heading": "with assistance from:",
+          "options": {
+            "1": "Some good ol' Tom-foolery",
+            "2": "Two double cheeseburgers with extra pickles",
+            "3": "A powerful computer",
+            "4": "An anti-gravity engine",
+            "5": "A wizard's staff",
+            "6": "A secret agent's tool belt",
+            "7": "Jeeves, the helpful butler"
+          },
+          "answer": "5"
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "page1": {
+      "elements": {
+        "heading": "Course Conclusion",
+        "subHeading": "You have completed the course!",
+        "paragraph1": "In criminal law, in certain jurisdictions, criminal prosecutions are brought in the name of the People. Several U.S. states, including California, Illinois, and New York, use this style.",
+        "paragraph2": "A People's Republic is typically a Marxist or socialist one-party state that claims to govern on behalf of the people even if it in practice often turns out to be a dictatorship. Populism is another umbrella term for various political tendencies that claim to represent the people."
+      }
+    }
+  }
+}

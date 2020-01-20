@@ -13,3 +13,5 @@ function buttonCheck(event) {
     }
   }
 }
+
+// answer validation

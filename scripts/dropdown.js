@@ -10,3 +10,5 @@ function optionCheck(event) {
   console.log(selectForm.value);
   console.log(selectForm1.value);
 }
+
+// answer validation
