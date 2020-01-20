@@ -66,6 +66,10 @@ body {
   float: left;
 }
 
+.optionDefault {
+  color: #696969;
+}
+
 .option {
   width: 20em;
   margin: 1%;
@@ -111,4 +115,9 @@ body {
   background-color: #1f1f1f;
   color: #fffafa;
   border: solid 0.1em #fffafa;
+}
+
+#submitBtn {
+  position: fixed;
+  bottom: 0;
 }
